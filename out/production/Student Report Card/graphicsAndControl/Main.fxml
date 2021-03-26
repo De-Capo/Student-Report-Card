@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphicsAndControl.MainController">
+    <HBox alignment="CENTER">
+        <Label text="There are already some saved records">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Label>
+        <Button id="preSavedRecords" mnemonicParsing="false" onAction="#onPreSavedClicked" text="PreSaved Records">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></Button>
+      <VBox.margin>
+         <Insets bottom="40.0" />
+      </VBox.margin>
+    </HBox>
+    <HBox alignment="CENTER">
+        <VBox.margin>
+            <Insets bottom="15.0" />
+        </VBox.margin>
+        <Label text="Enter Student Name">
+            <HBox.margin>
+                <Insets right="15.0" />
+            </HBox.margin>
+        </Label>
+        <TextField id="studentName" fx:id="IDStudentName" promptText="Name">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </TextField>
+    </HBox>
+    <HBox alignment="CENTER">
+        <VBox.margin>
+            <Insets bottom="15.0" />
+        </VBox.margin>
+        <Label text="Enter Student ID">
+            <HBox.margin>
+                <Insets right="15.0" />
+            </HBox.margin>
+        </Label>
+        <TextField id="studentId" fx:id="IDStudentId" promptText="ID (String)">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </TextField>
+    </HBox>
+    <HBox alignment="CENTER">
+        <VBox.margin>
+            <Insets bottom="15.0" />
+        </VBox.margin>
+        <Label text="Enter Student Marks">
+            <HBox.margin>
+                <Insets right="15.0" />
+            </HBox.margin>
+        </Label>
+        <TextField id="studentMarks" fx:id="IDStudentMarks" promptText="Marks">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </TextField>
+    </HBox>
+    <Button id="save" fx:id="IDSave" mnemonicParsing="false" onAction="#saveButtonClicked" text="Save">
+        <VBox.margin>
+          <Insets bottom="10.0" />
+        </VBox.margin>
+    </Button>
+    <HBox alignment="CENTER">
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+        <Button id="sortByName" mnemonicParsing="false" onAction="#onSortByNameClicked" text="SortByName">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button id="sortByMarks" mnemonicParsing="false" onAction="#onSortByMarksClicked" text="SortByMarks">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button id="specificReport" mnemonicParsing="false" onAction="#onSpecificReportClicked" text="Specific Report">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button id="studentGrades" mnemonicParsing="false" onAction="#onStudentGradesClicked" text="Student Grades">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button id="modify" mnemonicParsing="false" onAction="#onModifyClicked" text="Modify">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button id="delete" mnemonicParsing="false" text="Delete">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>
